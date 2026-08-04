@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike Gallery | Just Do It</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Nike home">
+        <img src="img/logo.png" alt="Nike" class="logo-img" />
+        <span class="logo-text">GALLERY</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#gallery">Gallery</a>
+        <a href="#featured">Featured</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <img src="img/logo.png" alt="Nike swoosh" class="hero-logo" />
+        <p class="hero-kicker">EST. 1971 &middot; JUST DO IT</p>
+        <h1>THE COLLECTION</h1>
+        <p class="hero-sub">Explore the icons. From the swoosh that started it all to the silhouettes that define sneaker culture.</p>
+        <a href="#gallery" class="btn btn-primary">Browse Gallery</a>
+      </div>
+      <div class="hero-badge">
+        <span class="hero-count" id="heroCount">0</span>
+        <span class="hero-count-label">Shoes in the collection</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="featured" class="featured-section">
+      <h2 class="section-title">Featured</h2>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <div class="gallery-head">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-controls">
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search shoes..." aria-label="Search shoes" />
+          </div>
+          <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+        </div>
+      </div>
+      <div class="shoes-grid" id="shoesGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No shoes match your search.</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2 class="section-title">About</h2>
+      <p>This is a static gallery showcasing a preset collection of Nike sneakers. Filter by category or search by name. Add more styles to your data file and they will appear here automatically.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Nike Gallery &mdash; Fan-made showcase, not affiliated with Nike Inc.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
